@@ -4,7 +4,6 @@ import java.nio.file.Path;
 
 public class ClientThread implements Runnable{
     Socket clientRequest;
-    String resource="";
     String fileStore="";
 
 
@@ -32,7 +31,7 @@ public class ClientThread implements Runnable{
 
       //Getting the requested data
        if(newLine.equals("/html")){
-          fileStore="/Users/decagon/Desktop/week_4/week5/Resources/index.html";
+          fileStore="Resources/index.html";
            try {
          BufferedReader fileReader= new BufferedReader(new FileReader(fileStore));
 
